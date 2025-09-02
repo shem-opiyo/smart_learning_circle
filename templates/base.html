@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Smart Learning Circle</title>
+</head>
+<body>
+  <header>
+    <h1>Smart Learning Circle</h1>
+    <nav>
+      {% if user.is_authenticated %}
+        Hello {{ user.username }} ({{ user.role }}) |
+        <a href="{% url 'logout' %}">Logout</a>
+      {% else %}
+        <a href="{% url 'login' %}">Login</a> |
+        <a href="{% url 'register_student' %}">Register Student</a> |
+        <a href="{% url 'register_educator' %}">Register Educator</a>
+      {% endif %}
+    </nav>
+    <hr/>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+</body>
+</html>
