@@ -63,6 +63,14 @@ ROOT_URLCONF = 'smart_learning_circle.urls'
 AUTH_USER_MODEL = 'core.User'
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+# Optional: include a local static folder during development
+STATICFILES_DIRS = [BASE_DIR / 'static']
+
+
+# Recommended production storage for whitenoise
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 # end new
 
 TEMPLATES = [
