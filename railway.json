@@ -1,0 +1,5 @@
+{
+  "build": {
+    "packages": ["libmysqlclient-dev", "default-libmysqlclient-dev", "build-essential", "pkg-config"]
+  }
+}
