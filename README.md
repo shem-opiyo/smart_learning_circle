@@ -101,7 +101,6 @@ python manage.py migrate
 python manage.py createsuperuser
 ```
 
-
 Running the Application
 Activate the virtual environment:
 
