@@ -64,8 +64,8 @@ AUTH_USER_MODEL = 'core.User'
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-# Optional: include a local static folder during development
-STATICFILES_DIRS = [BASE_DIR / 'static']
+# # Optional: include a local static folder during development
+# STATICFILES_DIRS = [BASE_DIR / 'staticfiles']
 
 
 # Recommended production storage for whitenoise
